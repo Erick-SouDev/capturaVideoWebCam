@@ -4,13 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
+import { WebcamComponent } from './webcam/webcam.component';
+import { WebcamService } from './webcam/webcam.service';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WebcamComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
